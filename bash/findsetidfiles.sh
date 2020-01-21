@@ -31,5 +31,5 @@ echo ""
 
 echo "Regular Files:"
 echo "============="
-find / -type f -size +1M -exec ls -lsh {} + 2>/dev/null | sort -nr | head -10 |awk '{print $1, $4, $10}'
+find / -type f -exec ls -lsh --block-size=MB {} + 2>/dev/null | sort -nr | head -10 |awk '{print $1, $4, $10}'
 echo ""

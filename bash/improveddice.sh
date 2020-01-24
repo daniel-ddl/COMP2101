@@ -47,6 +47,6 @@ echo ""
 #tell user you are giving average
 echo "The average of the dice is:"
 #######average=$(( $range + $bias / 2 ))
-average=$(( $sum / 2))
+average=$(( $sum / 3))
 #display results
 echo $average

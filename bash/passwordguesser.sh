@@ -15,30 +15,35 @@ referenceString="password"
 ###task2#### improve rewriting if command
 
 if [ $myString = $referenceString ]; then
-    echo "Correct, Good Guess."
-elif [ $myString != $referenceString ]; then
+  echo "Correct."
+  else
     read -p "Sorry try again, Attempt 2, Guess a password: " myString
+      if  [ $myString = $referenceString ]; then
+        echo "correct."
+          else
+            read -p "Sorry try again, Attempt 3, Guess a password: " myString
+              if  [ $myString = $referenceString ]; then
+                echo "correct."
+                  else
+                    read -p "Sorry try again, Attempt 4, Guess a password: " myString
+                      if  [ $myString = $referenceString ]; then
+                        echo "correct."
+                          else
+                            read -p "Sorry try again, Attempt 5, Guess a password: " myString
+                              if  [ $myString = $referenceString ]; then
+                                echo "correct."
+                                  else
+                                    echo "sorry you are out of tries"
+                              fi
+                      fi
+              fi
+      fi
 fi
-if [ $myString = $referenceString ]; then
-    echo "i knew you could do it."
-elif [ $myString != $referenceString ]; then
-    read -p "Sorry try again, Attempt 3, Guess a password: " myString
-fi
-if [ $myString = $referenceString ]; then
-    echo "look at you, mister smart."
-elif [ $myString != $referenceString ]; then
-    read -p "Sorry try again, Attempt 4, Guess a password: " myString
-fi
-if [ $myString = $referenceString ]; then
-    echo "you are amazing."
-elif [ $myString != $referenceString ]; then
-    read -p "Sorry try again, Attempt 5, Guess a password: " myString
-fi
-if [ $myString = $referenceString ]; then
-    echo "i knew you had it in you."
-elif [ $myString != $referenceString ]; then
-    echo "Sorry you are out if tries"
-fi
+
+
+
+
+
 
 
 
